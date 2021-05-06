@@ -1,0 +1,619 @@
+/* 顶部区 */
+header{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    height: 40px;
+    background-color: #0058AA ;
+}
+.header__hotline{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 1200px;
+    font-size: 18px;
+    color: #FFFFFF;
+    line-height: 40px;
+}
+/* 导航区 */
+nav{
+    height: 121px;
+    background-color: #fff;
+}
+.nav{
+    position: relative;
+    width: 1100px;
+    margin: 0 auto;
+}
+.nav__logo{
+    position: absolute;
+    top: 15.2px;
+}
+.nav__list{
+    position: absolute;
+    left: 290px;
+    top: 28px;
+    width: 654px;
+    display: flex;
+}
+.nav-list li{
+    width: 82px;
+    height: 67.8px;
+    margin-right: 30px;
+}
+.nav-list li:last-child{
+    margin-right: 0px;
+}
+.nav-list li .text{
+    width: 64px;
+    font-size: 16px;
+    color: #545454;
+    margin:7px 11px 0px 7px ;
+}
+.nav-img{
+    margin-left: 15.5px ;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: all 1s ease 0s;
+}
+.nav-img:hover{
+    animation-name: breath;                 
+    animation-duration: 3s;                        
+    animation-timing-function: ease-in-out;         
+    animation-iteration-count: infinite; 
+}
+@keyframes breath {
+    from { 
+        transform: scale( 1, 1 );                               }                                               
+    50%  { 
+        transform: scale( 1.05, 1.05 );  
+    }                        
+    to   { 
+        transform: scale( 1, 1 );  
+    }                         
+}
+.nav-list li .home{
+    background:url(../images/home-gry.png) no-repeat 50% 50%;
+}
+.nav-list li .home:hover{
+    background:url(../images/home-white.png) no-repeat 50% 50%;
+    background-color: #0058AA;
+}
+.nav-list li .about{
+    background:url(../images/abouts-gry.png) no-repeat 50% 50%;
+}
+.nav-list li .about:hover{
+    background:url(../images/abouts-white.png) no-repeat 50% 50%;
+    background-color: #0058AA;
+}
+.nav-list li .kefu{
+    background:url(../images/kefu-gry.png) no-repeat 50% 50%;
+}
+.nav-list li .kefu:hover{
+    background:url(../images/kefu-white.png) no-repeat 50% 50%;
+    background-color: #0058AA;
+}
+.nav-list li .chanpin{
+    background:url(../images/chanpin-gry.png) no-repeat 50% 50%;
+}
+.nav-list li .chanpin:hover{
+    background:url(../images/chanpin-white.png) no-repeat 50% 50%;
+    background-color: #0058AA;
+}
+.nav-list li .fuwu{
+    background:url(../images/fuwu-gry.png) no-repeat 50% 50%;
+}
+.nav-list li .fuwu:hover{
+    background:url(../images/fuwu-white.png) no-repeat 50% 50%;
+    background-color: #0058AA;
+}
+.nav-search{
+    position: absolute;
+    left: 820px;
+    top: 45px;
+    width: 326px;
+    margin-left: 62px;
+}
+.nav-search input{
+    float: left;
+    width: 250px;
+    height: 37px;
+    padding-left: 20px;
+    border: 1px solid #D3D3D3;
+    font-size: 14px;
+    color: #545454;
+    border-radius: 4px 0px 0px 4px;
+}
+.nav-search img{
+    float: left;
+    height: 39px;
+    background-color:#0058AA;
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
+}
+/* banner区 */
+.banner{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.banner_list{
+    width: 400%;
+    transform:translateX(-0%);
+}
+.banner_list li{
+    width: 25%;
+    float: left;
+
+}
+.banner-img{
+    width: 100%;
+}
+.banner-dots{
+    position: absolute;
+    width: 42px;
+    left: 50%;
+    margin-left: -21px;
+    height: 10px;
+    bottom: 30px;
+}
+.banner-dots li{
+    float: left;
+    width: 10px;
+    height: 10px;
+    margin-right: 6px;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+}
+.banner-dots li.cur{
+    background-color:#0058AA;
+}
+.banner-dots li:last-child{
+    margin-right: 0;
+}
+/* 商品区 */
+.product{
+    position: relative;
+    height: 270px;
+    width: 1055px;
+    margin:  0 auto;
+}
+.product-arena{
+    position: absolute;
+    top: 38.2px;
+    width: 1055px;
+    overflow: hidden;
+}
+.product-list{
+    position: relative;
+    list-style: none;
+    width: 4422px;
+    left: -884px;
+    transition: left 1s ease 0s;
+}
+.product-list li{
+    float: left;
+}
+.product-list li>div{
+    float: left;
+    margin-right: 50px;
+}
+.product-list li .text{
+    height: 48px;
+    width: 162px;
+    font-size: 18px;
+    color: #838383;
+    margin-top: 10px;
+    padding-left: 3px;
+}
+.product-btn  .left_btn{
+    position: absolute;
+    top: 135px;
+    left: -58.8px;
+    width: 48px;
+    height: 48px;
+    background: url(../images/prev.png);
+
+}
+.product-btn  .left_btn:hover{
+    background: url(../images/prev_active.png);
+}
+.product-btn  .right_btn{
+    position: absolute;
+    top: 135px;
+    left: 1071px;
+    width: 48px;
+    height: 48px;
+    background: url(../images/next.png);
+
+}
+.product-btn  .right_btn:hover{
+    background: url(../images/next_active.png);
+}
+/* 了解我们区 */
+.aboutUs{
+    position: relative;
+    height: 490px;
+    width: 1065px;
+    margin: 0 auto;
+}
+.aboutUs-title{
+    position: absolute;
+    left: 466.8px;
+    margin-top: 32px;
+    font-size: 32px;
+    color: #696868;
+}
+.aboutUs-left-hr{
+    position: absolute;
+    top: 75px;
+    width: 460px;
+    height: 2px;
+    background-color:#808080;
+}
+.aboutUs-right-hr{
+    position: absolute;
+    top: 75px;
+    left: 604px;
+    width: 460px;
+    height: 2px;
+    background-color:#808080;
+}
+.aboutUs > p{
+    position: absolute;
+    left: 488.4px;
+    top: 76px;
+    font-size: 18px;
+    color: #9B9B9B; 
+}
+.aboutUs-line{
+    position: absolute;
+    left: 482px;
+    top: 112px;
+    width: 93px;
+    height: 3px;
+    background-color: #0058AA;
+
+}
+.aboutUs_list{
+    position: absolute;
+    list-style: none;
+    margin-top: 150px;
+}
+.aboutUs_list li {
+    float: left;    
+}
+.aboutUs_list li a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.aboutUs_list li.text{
+    width: 239px;
+    margin-right: 95px;
+}
+.aboutUs_list li.text h3{
+    font-size: 26px;
+    color: #0058AA;
+}
+.aboutUs_list li.text p{
+    font-size: 21px;
+    color: #5A5A5A;
+    line-height: 41px;
+}
+.aboutUs_list li.text .hr{
+    width: 142px;
+    height: 4px;
+    background-color:  #0058AA;
+    margin-bottom: 20px;
+}
+.aboutUs_list li.text span{
+    font-size: 18px;
+    color: #7B7C7C;
+    line-height: 26px;
+}
+.aboutUs_list li.text h4{
+    width: 130px;
+    height: 38px;
+    margin-top: 27px;
+    background-color: #0058AA;
+    font-size: 18px;
+    color: #FFFFFF;
+    line-height: 38px;
+    text-align: center;
+}
+.aboutUs_list li.text h4:hover{
+    animation: leftBox 1s linear 0s;
+}
+@keyframes leftBox {
+    10% { transform: rotate(15deg); }
+    20% { transform: rotate(-10deg); }
+    30% { transform: rotate(5deg); }
+    40% { transform: rotate(-5deg); }
+    50%, 100% {
+        transform: rotate(0deg);
+    } 
+}
+.aboutUs_list .img_box{
+    width: 384px;
+    overflow: hidden;
+}
+.aboutUs_list li img{
+    margin-right: 113px;
+    height: 256px;
+    transition: all 1.5s ease 0s;
+}
+.aboutUs_list li img:hover{
+    transform:scale(1.1);
+    transition: all 1.5s ease 0s;
+}
+.aboutUs_list li>ol{
+    position: absolute;
+    left: 792px;
+}
+.aboutUs_list li>ol>li{
+    list-style: none;
+    width: 273px;
+    height: 61px;
+    background-color: #ccc;
+    margin: 10px 0px;
+    font-size: 22px;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 61px; 
+    transition: background-color .5s ease 0s;
+}
+.aboutUs-ol>li:hover{
+    transition: background-color .5s ease 0s;
+    background-color: #0058AA ;
+
+}
+.aboutUs-ol>li .icon{
+    float: left;
+    margin: 13px 20px 0 30px;
+    width: 40px;
+    height: 34px;
+}
+.aboutUs-ol>li .text{
+    float: left;
+}
+/* 精品推荐区 */
+.recommend{
+    height: 590px;
+    background-color: #EFF0F4;
+}
+.recommend-alignCenter{
+    position: relative;
+    width: 1081px;
+    margin: 0 auto;
+}
+.recommend-arena{
+    position: absolute;
+    top: 195px;
+    width: 1081px;
+    overflow: hidden;
+}
+.recommend h2{
+    position: absolute;
+    left: 471.8px;
+    margin-top:70px;
+    font-size: 32px;
+    color: #696868;
+}
+.recommend-alignCenter > p{
+    position: absolute;
+    top: 112px;
+    left: 419px;
+    font-size: 18px;
+    color: #9B9B9B;
+}
+.recommend-line{
+    position: absolute;
+    left: 489px;
+    top: 152px;
+    width: 93px;
+    height: 3px;
+    background-color:  #0058AA;
+}
+.recommend_list{
+    position: relative;
+    list-style: none;
+    left: -1104px;
+    width: 4416px;
+}
+.recommend_list li>div{
+    position: relative;
+    float: left;
+    margin-right:23px;
+ 
+}
+.recommend_list li>div img{
+    width: 345px;
+    height: 326px;
+}
+.recommend_list li>div>p{
+    position: absolute;
+    left:0;
+    bottom: 0;
+    width: 325px;
+    height: 45px;
+    font-size: 16px;
+    line-height: 45px;
+    padding-left: 20px;
+    color: #FFFFFF;
+    background-color:  rgba(0,0,0,0.50);
+}
+.recommend-btn{
+    position: absolute;
+    top: 346px;
+    left: -50px;
+}
+.recommend-btn .left_btn{
+    position: absolute;
+    display: block;
+    width: 48px;
+    height: 48px;
+    background: url(../images/prev.png);
+    left: -5px;
+}
+.recommend-btn .right_btn{
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    background: url(../images/next.png);
+    left: 1141px;
+}
+.recommend-btn .left_btn:hover{
+    background: url(../images/prev_active.png);
+}
+.recommend-btn .right_btn:hover{
+    background: url(../images/next_active.png);
+}
+/* 新闻中心区 */
+.presscenter{
+    position: relative;
+    height: 545px;
+    width: 1050px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+main .presscenter h2{
+    position: absolute;
+    left: 461.8px;
+    margin-top:70px;
+    font-size: 32px;
+    color: #696868;
+}
+.presscenter-hr .left-hr{
+    position: absolute;
+    top: 115px;
+    width: 450px;
+    height: 2px;
+    background-color:#808080;
+}
+.presscenter-hr .right-hr{
+    position: absolute;
+    top: 115px;
+    left: 599px;
+    width: 450px;
+    height: 2px;
+    background-color:#808080;   
+}
+.presscenter > p{
+    position: absolute;
+    top: 112px;
+    left: 471.4px;
+    font-size: 18px;
+    color: #9B9B9B;
+}
+.presscenter-line{
+    position: absolute;
+    left: 476.2px;
+    top: 152px;
+    width: 93px;
+    height: 3px;
+    background-color:  #0058AA;
+}
+.presscenter-list{
+    position: absolute;
+    list-style: none;
+    width: 1200px;
+    top: 200px;
+    left:-5px;
+   
+}
+.presscenter-list li{
+    position: relative;
+    float: left;
+    width: 510px;
+    height: 110px;
+    margin-right: 70px;
+    margin-bottom: 40px;
+    
+}
+.presscenter-list li:nth-child{
+    margin-right:0px;
+}
+.presscenter-list-img{
+    position: absolute;
+    float: left;
+    width: 65px;
+    height: 65px;
+    margin-right: 38px;
+    top:0;
+    transition: top .6s ease 0s;
+}
+.presscenter-list-img:hover{
+    top:-20px;
+    transition: none;
+}
+.presscenter-list-number{
+    position: absolute;
+    top: 6px;
+    left: 12px;
+    font-size: 35px;
+    color: #FFFFFF;
+}
+.presscenter-list-text{
+    position: absolute;
+    left: 93px;
+    float: left;
+    width: 400px;
+    margin-bottom: 43px;
+}
+.presscenter-list-title{
+    font-size: 21px;
+    color: #4A4A4A;
+    margin-bottom: 12px;
+}
+.presscenter-list-content{
+    font-size: 16px;
+    width: 380px;
+    color: #4A4A4A;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+
+
+}
+/* 联系信息区 */
+.footer__info{
+    width: 100%;
+    height: 210px;
+    background-color: #06142F;
+}
+.footer__center{
+    position: relative;
+    width: 1050px;
+    margin: 0 auto;
+}
+.footer__h2{
+    position: absolute;
+    top: 74px;
+    font-size: 48px;
+    color: #FFFFFF;
+}
+.footer__list{
+    position: absolute;
+    top: 53px;
+    left:245px;
+    width: 207px;
+
+}
+.footer__list li {
+    width: 300px;
+    font-size: 16px;
+    color: #FFFFFF;
+    line-height: 40px;
+}
+/* 版权区 */
+.footer__copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    background-color: #202C46;
+    font-size: 14px;
+    color: #FFFFFF;  
+}
