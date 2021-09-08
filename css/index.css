@@ -26,7 +26,8 @@ nav{
 }
 .nav__logo{
     position: absolute;
-    top: 15.2px;
+    width: 190px;
+    top: 20px;
 }
 .nav__list{
     position: absolute;
@@ -35,15 +36,15 @@ nav{
     width: 654px;
     display: flex;
 }
-.nav-list li{
+.nav__list li{
     width: 82px;
     height: 67.8px;
     margin-right: 30px;
 }
-.nav-list li:last-child{
+.nav__list li:last-child{
     margin-right: 0px;
 }
-.nav-list li .text{
+.nav__list li .text{
     width: 64px;
     font-size: 16px;
     color: #545454;
@@ -64,7 +65,8 @@ nav{
 }
 @keyframes breath {
     from { 
-        transform: scale( 1, 1 );                               }                                               
+        transform: scale( 1, 1 );                               
+    }                                               
     50%  { 
         transform: scale( 1.05, 1.05 );  
     }                        
@@ -72,38 +74,38 @@ nav{
         transform: scale( 1, 1 );  
     }                         
 }
-.nav-list li .home{
+.nav__list li .home{
     background:url(../images/home-gry.png) no-repeat 50% 50%;
 }
-.nav-list li .home:hover{
+.nav__list li .home:hover{
     background:url(../images/home-white.png) no-repeat 50% 50%;
     background-color: #0058AA;
 }
-.nav-list li .about{
+.nav__list li .about{
     background:url(../images/abouts-gry.png) no-repeat 50% 50%;
 }
-.nav-list li .about:hover{
+.nav__list li .about:hover{
     background:url(../images/abouts-white.png) no-repeat 50% 50%;
     background-color: #0058AA;
 }
-.nav-list li .kefu{
+.nav__list li .kefu{
     background:url(../images/kefu-gry.png) no-repeat 50% 50%;
 }
-.nav-list li .kefu:hover{
+.nav__list li .kefu:hover{
     background:url(../images/kefu-white.png) no-repeat 50% 50%;
     background-color: #0058AA;
 }
-.nav-list li .chanpin{
+.nav__list li .chanpin{
     background:url(../images/chanpin-gry.png) no-repeat 50% 50%;
 }
-.nav-list li .chanpin:hover{
+.nav__list li .chanpin:hover{
     background:url(../images/chanpin-white.png) no-repeat 50% 50%;
     background-color: #0058AA;
 }
-.nav-list li .fuwu{
+.nav__list li .fuwu{
     background:url(../images/fuwu-gry.png) no-repeat 50% 50%;
 }
-.nav-list li .fuwu:hover{
+.nav__list li .fuwu:hover{
     background:url(../images/fuwu-white.png) no-repeat 50% 50%;
     background-color: #0058AA;
 }
@@ -123,6 +125,7 @@ nav{
     font-size: 14px;
     color: #545454;
     border-radius: 4px 0px 0px 4px;
+    outline: none;
 }
 .nav-search img{
     float: left;
