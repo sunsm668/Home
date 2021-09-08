@@ -1,12 +1,12 @@
 (function(){
-    //得到元素
+    //获取dom
     var banner_list=document.getElementById('banner_list');
     var banner_lis=document.getElementsByTagName('li');
     var dots=document.getElementById('dots');
     var dots_li=dots.querySelectorAll('li');
     //克隆
     var clone_li=banner_list.firstElementChild.cloneNode(true);
-    //上树
+    //挂载
     banner_list.appendChild(clone_li);
     var idx=0;
     var timer = null;
